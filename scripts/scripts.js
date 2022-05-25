@@ -24,7 +24,10 @@ function showNavbar()
     navbar.style.top = '0';
 
     setTimeout(() => {
-        navbar.style.top = '-80px';
+        if (window.pageYOffset != 0)
+        {
+                    navbar.style.top = '-80px';
+        }
     }, 5000);
 
 }
