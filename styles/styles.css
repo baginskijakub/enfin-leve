@@ -38,6 +38,7 @@ body{
     position: fixed;
     width: calc(100% - 40px);
     background-color: var(--grey-100);
+    transition: top 150ms;
 }
 .navbar{
     width: 100%;
