@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/scripts.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="fixed">
+    <div class="navbar navbar-scrolled" style="background-color: #FEFDFD;">
+        <div class="navbar-container">
+            <div class="navbar-button">
+                <a class="navbar-button-label">Shop</a>
+            </div>
+            <div class="navbar-button">
+                <a class="navbar-button-label">Collections</a>
+            </div>
+            <div class="navbar-button">
+                <a class="navbar-button-label">Inspiration</a>
+            </div>
+            <div class="navbar-button">
+                <img id="search-button" src="icons/search-icon.svg" alt="Search">
+            </div>
+        </div>
+
+        <div class="navbar-logo logo-scrolled" onclick="goToHome()">
+            <img id="logo" src="images/logo-black.svg" alt="New works">
+        </div>
+
+        <div class="navbar-container">
+            <div class="navbar-button">
+                <a class="navbar-button-label">EN/DKK</a>
+            </div>
+            <div class="navbar-button">
+                <a class="navbar-button-label">Bag (0)</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacing120"></div>
+
+<div class="shop-head">
+<a class="shop-head-heading">Shop all</a>
+<div class="spacing40"></div>
+<a class="shop-head-content">We are proud of our collection of furniture, lighting and objects. It has grown slowly over the years and consists of pieces that have been brought to life with care and enthusiasm, in the hope that they will be received with the same joy. Explore our curated collection of homeware below.</a>
+</div>
+
+<div class="spacing60"></div>
+
+<div class="shop-categories">
+    <div class="grid-container">
+        <div class="grid-shop-categories">
+            <div class="category-container">
+                <div class="navbar-button">
+                    <a class="navbar-button-label">All</a>
+                </div>
+                <div class="navbar-button">
+                    <a class="navbar-button-label">New Arrivals</a>
+                </div>
+                <div class="navbar-button">
+                    <a class="navbar-button-label">Lightning</a>
+                </div>
+                <div class="navbar-button">
+                    <a class="navbar-button-label">Furniture</a>
+                </div>
+                <div class="navbar-button">
+                    <a class="navbar-button-label">Objects</a>
+                </div>
+                <div class="navbar-button">
+                    <a class="navbar-button-label">Sale</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="spacing40"></div>
+    <div class="category-line"></div>
+</div>
+
+<div class="spacing40"></div>
+
+<div class="shop-products-container">
+
+    <div class="shop-products-row">
+
+        <div class="shop-component">
+                <img id="kizu" src="images/products/shop/kizu-white.jpg">
+                <div class="shop-component-background">
+                <div class="shop-component-manager">
+                    <div class="shop-component-color-manager">
+                        <div class="shop-component-color" onclick="changeKizuWhite()" style="background-color: #DCDDDD"></div>
+                        <div class="shop-component-color" onclick="changeKizuMarble()" style="background-color: #67615B"></div>
+                        <div class="shop-component-color" onclick="changeKizuBlack()" style="background-color: #1B1B1B"></div>
+                    </div>
+                    <div class="shop-component-button">
+                        <a>Add to bag</a>
+                    </div>
+                </div>
+                </div>
+                <div class="shop-component-label">
+                    <a>Kizu Portable Table Lamp</a>
+                    <a>DKK 1,695</a>
+                </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img src="images/products/shop/tense-lamp.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" style="background-color: #DCDDDD"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Tense Pendant Lamp</a>
+                <a>DKK 2,995</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img src="images/products/shop/lantern-pendant.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" style="background-color: #DCDDDD"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Lantern Pendant Lamp</a>
+                <a>DKK 2,995</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img id="covent" src="images/products/shop/covent-white.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeCoventWhite()" style="background-color: #D4CEC4"></div>
+                    <div class="shop-component-color" onclick="changeCoventDark()" style="background-color: #766D61"></div>
+                    <div class="shop-component-color" onclick="changeCoventBeige()" style="background-color: #887F75"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Covent Launge Chair</a>
+                <a>DKK 14,995</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="spacing40"></div>
+
+    <div class="shop-products-row">
+
+        <div class="shop-component">
+                <img id="karl" src="images/products/shop/karl-black.jpg">
+                <div class="shop-component-background">
+                <div class="shop-component-manager">
+                    <div class="shop-component-color-manager">
+                        <div class="shop-component-color" onclick="changeKarlBlack()" style="background-color: #0D1012"></div>
+                        <div class="shop-component-color" onclick="changeKarlBrown()" style="background-color: #523B31"></div>
+                    </div>
+                    <div class="shop-component-button">
+                        <a>Add to bag</a>
+                    </div>
+                </div>
+                </div>
+                <div class="shop-component-label">
+                    <a>Karl-Johan Table Lamp</a>
+                    <a>DKK 1,895</a>
+                </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img id="rise" src="images/products/shop/rise-white.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeRiseWhite()" style="background-color: #F2F5F5"></div>
+                    <div class="shop-component-color" onclick="changeRiseBlack()" style="background-color: #AEAFB8"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Rise & Shine Wall Mirror</a>
+                <a>DKK 2,995</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img id="karl-large" src="images/products/shop/karl-large-white.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeKarlLargeWhite()" style="background-color: #E9EAE9"></div>
+                    <div class="shop-component-color" onclick="changeKarlLargeBlack()" style="background-color: #989A9C"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Karl-Johan Pendant Lamp Large</a>
+                <a>DKK 3,495</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img src="images/products/shop/globe-white.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" style="background-color: #E9EAE9"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Lantern Globe Floor Lamp</a>
+                <a>DKK 3,795</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="spacing40"></div>
+
+    <div class="shop-products-row">
+
+        <div class="shop-component">
+                <img src="images/products/shop/margin.jpg">
+                <div class="shop-component-background">
+                <div class="shop-component-manager">
+                    <div class="shop-component-color-manager">
+                        <div class="shop-component-color" style="background-color: #D2C8BD"></div>
+                    </div>
+                    <div class="shop-component-button">
+                        <a>Add to bag</a>
+                    </div>
+                </div>
+                </div>
+                <div class="shop-component-label">
+                    <a>Margin Pendant Lamp</a>
+                    <a>DKK 5,495</a>
+                </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id" onclick="goToProduct()">
+            <img id="missing" src="images/products/shop/missing-black.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeMissingBlack()" style="background-color: #0D0D0C"></div>
+                    <div class="shop-component-color" onclick="changeMissingWalnut()" style="background-color: #493126"></div>
+                    <div class="shop-component-color" onclick="changeMissingOak()" style="background-color: #9A7957"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Missing Armchair</a>
+                <a>DKK 2,995</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img id="florence-coffe"src="images/products/shop/florence-coffe-marble.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeFlorenceCoffeMarble()" style="background-color: #8B8884"></div>
+                    <div class="shop-component-color" onclick="changeFlorenceCoffeBlack()" style="background-color: #393738"></div>
+                    <div class="shop-component-color" onclick="changeFlorenceCoffeWhite()" style="background-color: #D9D6D7"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Florence Coffee Table</a>
+                <a>DKK 4,995</a>
+            </div>
+        </div>
+
+        <div class="shop-component" id="shop-component-id">
+            <img id="florence-side" src="images/products/shop/florence-side-marble.jpg">
+            <div class="shop-component-background">
+            <div class="shop-component-manager">
+                <div class="shop-component-color-manager">
+                    <div class="shop-component-color" onclick="changeFlorenceSideMarble()" style="background-color: #8B8884"></div>
+                    <div class="shop-component-color" onclick="changeFlorenceSideBlack()" style="background-color: #393738"></div>
+                    <div class="shop-component-color" onclick="changeFlorenceSideWhite()" style="background-color: #D9D6D7"></div>
+                </div>
+                <div class="shop-component-button">
+                    <a>Add to bag</a>
+                </div>
+            </div>
+            </div>
+            <div class="shop-component-label">
+                <a>Florence Side Table</a>
+                <a>DKK 3,995</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="spacing40"></div>
+
+<div class="load-button-container">
+    <div class="navbar-button">
+        <a class="navbar-button-label">Load more</a>
+    </div>
+</div>
+
+<div class="spacing120"></div>
+
+<div class="footer">
+    <div class="spacing40"></div>
+    <div class="grid-container2">
+        <div class="grid-item6">
+            <img src="images/logo-white.svg">
+            <a>New Works presents a collection at the intersection between old and new. Light and dark. Design and art. Our work pays homage to the strong Scandinavian history of craftsmanship and materiality, whilst challenging the contemporary forms of today. We collaborate with an international group of renowned designers and artists, who display a matching fascination with sculptural forms and honest materials. These collaborative pursuits convey our love of the sensual, and of the bold.</a>
+        </div>
+        <div class="grid-item7">
+            <ul>
+                <li>Company</li>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Stockist</li>
+                <li>Agents and Distribution</li>
+                <li>Designers</li>
+                <li>Responsibility</li>
+                <li>#yesnewworks</li>
+                <li>Newsletter</li>
+            </ul>
+
+            <ul>
+                <li>Press</li>
+                <li>Image Bank</li>
+                <li>Press Realeses</li>
+            </ul>
+        </div>
+        <div class="grid-item8">
+            <ul>
+                <li>Product Specification</li>
+                <li>Product Fact Sheets</li>
+                <li>2D/3D Files</li>
+                <li>Assemly & Care Guides</li>
+            </ul>
+
+            <ul>
+                <li>Orders & Support</li>
+                <li>Delivery</li>
+                <li>Returns</li>
+                <li>Privacy Policy & Cookies</li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="spacing40"></div>
+    <div class="footer-line"></div>
+    <div class="bottom-footer">
+    <a>Copyrights Newworks</a>
+    </div>
+</div>
+
+<script>
+
+    function goToHome()
+        {
+                window.location.href='index.html';
+        }
+
+        function goToShop()
+        {
+                window.location.href='shop.html';
+        }
+
+        function goToProduct()
+        {
+                window.location.href='product.html';
+        }
+
+
+
+    function changeCoventDark(){
+        document.getElementById("covent").src = "images/products/shop/covent-dark.jpg";
+    }
+
+    function changeCoventWhite(){
+        document.getElementById("covent").src = "images/products/shop/covent-white.jpg";
+    }
+
+    function changeCoventBeige(){
+        document.getElementById("covent").src = "images/products/shop/covent-beige.jpg";
+    }
+
+    function changeKizuWhite(){
+        document.getElementById("kizu").src = "images/products/shop/kizu-white.jpg";
+    }
+
+    function changeKizuBlack(){
+        document.getElementById("kizu").src = "images/products/shop/kizu-black.jpg";
+    }
+
+    function changeKizuMarble(){
+        document.getElementById("kizu").src = "images/products/shop/kizu-marble.jpg";
+    }
+
+    function changeKarlBlack(){
+        document.getElementById("karl").src = "images/products/shop/karl-black.jpg";
+    }
+
+    function changeKarlBrown(){
+        document.getElementById("karl").src = "images/products/shop/karl-brown.jpg";
+    }
+
+    function changeRiseWhite(){
+        document.getElementById("rise").src = "images/products/shop/rise-white.jpg";
+    }
+
+    function changeRiseBlack(){
+        document.getElementById("rise").src = "images/products/shop/rise-black.jpg";
+    }
+
+    function changeKarlLargeWhite(){
+        document.getElementById("karl-large").src = "images/products/shop/karl-large-white.jpg";
+    }
+
+    function changeKarlLargeBlack(){
+        document.getElementById("karl-large").src = "images/products/shop/karl-large-black.jpg";
+    }
+
+    function changeMissingBlack(){
+        document.getElementById("missing").src = "images/products/shop/missing-black.jpg";
+    }
+
+    function changeMissingOak(){
+        document.getElementById("missing").src = "images/products/shop/missing-oak.jpg";
+    }
+
+    function changeMissingWalnut(){
+        document.getElementById("missing").src = "images/products/shop/missing-walnut.jpg";
+    }
+
+    function changeFlorenceCoffeBlack(){
+        document.getElementById("florence-coffe").src = "images/products/shop/florence-coffe-black.jpg";
+    }
+
+    function changeFlorenceCoffeMarble(){
+        document.getElementById("florence-coffe").src = "images/products/shop/florence-coffe-marble.jpg";
+    }
+
+    function changeFlorenceCoffeWhite(){
+        document.getElementById("florence-coffe").src = "images/products/shop/florence-coffe-white.jpg";
+    }
+
+    function changeFlorenceSideBlack(){
+        document.getElementById("florence-side").src = "images/products/shop/florence-side-black.jpg";
+    }
+
+    function changeFlorenceSideMarble(){
+        document.getElementById("florence-side").src = "images/products/shop/florence-side-marble.jpg";
+    }
+
+    function changeFlorenceSideWhite(){
+        document.getElementById("florence-side").src = "images/products/shop/florence-side-white.jpg";
+    }
+
+</script>
+</body>
+
+</html>

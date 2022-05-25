@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/scripts.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="navbar-container">
+    <div class="navbar">
+        <div class="shop-button" onclick="shop()">
+            <a>Shop</a>
+
+        </div>
+        <div class="collections-button" onclick="collection()">
+            <a>Collections</a>
+        </div>
+        <div class="search-button">
+            <img id="search-icon"src="icons/search-icon.svg">
+
+        </div>
+        <div class="logo-button" onclick="hide()">
+            <a>ével nifne</a>
+
+        </div>
+        <div class="currency-button" onclick="currency()">
+            <a>EUR/EN</a>
+        </div>
+        <div class="contact-button">
+            <a>Contact</a>
+
+        </div>
+        <div class="cart-button">
+            <a>Cart</a>
+            <div class="cart-counter">
+                <a>0</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="navbar-landscape">
+    <img id="navbar-image" src="images/backgrounds/shop.jpg">
+    <div class="buttons-wrapper">
+        <div class="buttons-alingment">
+            <div class="shop-alingment">
+                <div id="buttons-men" class="buttons-container">
+                        <a>Men</a>
+                        <a>All items</a>
+                        <a>New in</a>
+                        <a>Outerwear</a>
+                        <a>Tops</a>
+                        <a>Sweatshirts</a>
+                        <a>Bottoms</a>
+                        <a>Jewellery</a>
+                        <a>Accesories</a>
+                </div>
+                <div id="buttons-women" class="buttons-container">
+                        <a>Women</a>
+                        <a>All items</a>
+                        <a>New in</a>
+                        <a>Outerwear</a>
+                        <a>Tops</a>
+                        <a>Bottoms</a>
+                        <a>Jewellery</a>
+                        <a>Accesories</a>
+                </div>
+            </div>
+            <div id="buttons-collections" class="buttons-container">
+                <a>Collection XVI</a>
+                <a>Collection XV</a>
+                <a>Collection XIV</a>
+                <a>Collection XIII</a>
+                <a>Collection XII</a>
+                <a>Collection XI</a>
+                <a>Collection X</a>
+            </div>
+            <div id="buttons-currency" class="buttons-container">
+                <a>EUR/EN</a>
+                <a>USD/EN</a>
+                <a>PLN/EN</a>
+                <a>DKK/EN</a>
+                <a>SEK/EN</a>
+                <a>NOK/EN</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="head-logo-container">
+    <a class="head-logo-text">evel nifne</a>
+</div>
+
+<div class="video-container">
+    <video id="header-video" autoplay muted loop>
+        <source src="videos/header-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="collection-section-container">
+    <div class="collection-image-container">
+        <img src="images/backgrounds/collection1.jpg">
+    </div>
+    <div class="collection-text-container">
+        <div class="collection-container-inner">
+                <a class="collection-title">Collection XVI</a>
+                <a class="collection-description-primary">Collection XVI is a performance oriented creative expression inviting to further explore raw, experimental aesthetics. Designed to overcome the limitations of regular clothing through signature patterns allowing a full range of movement, responding to the needs of modern urban life. </a>
+                <div class="collection-button">
+                    <a class="collection-button-label">Discover collection</a>
+                    <div class="underline"></div>
+                </div>
+        </div>
+        <a class="collection-description-secondary">Usage of the highest quality materials allows us to produce clothing that overcomes limitations of the most demanding weather conditions.</a>
+    </div>
+
+</div>
+
+<div class="product-section-title">
+    <a>Outerwear</a>
+</div>
+
+<div class="product-section-container">
+    <div class="product-component">
+        <img src="images/products/shop/larrea.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">larrea jacket</a>
+            <a class="product-component-price">€450</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/gehein.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">gehein jacket</a>
+            <a class="product-component-price">€510</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/aise.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">aise jacket</a>
+            <a class="product-component-price">€495</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/zehar.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">zehar jacket</a>
+            <a class="product-component-price">€495</a>
+        </div>
+    </div>   
+</div>
+
+<div class="product-section-outro">
+    <div class="product-section-button">
+        <a>Shop all outerwear</a>
+        <div class="underline"></div>
+    </div>
+</div>
+
+<div class="collection-section-container secondary">
+    <div class="collection-text-container">
+        <div class="collection-container-inner">
+                <a class="collection-title">Collection XVI</a>
+                <a class="collection-description-primary">Through the research and deconstruction of motorcycle suits, pilot vests, mountaineering equipment and combat uniforms, we have been able to reimagine protective garments to fit the needs of everyday use in a modern, technically infused form.</a>
+                <div class="collection-button">
+                    <a class="collection-button-label">Discover collection</a>
+                    <div class="underline"></div>
+                </div>
+        </div>
+        <a class="collection-description-secondary">Striving to find the perfect balance between form and functionality, 
+            collection XVI introduces further menswear developments.</a>
+    </div>
+    <div class="collection-image-container">
+        <img src="images/backgrounds/collection2.jpg">
+    </div>
+</div>
+
+<div class="product-section-title">
+    <a>Bottoms</a>
+</div>
+
+<div class="product-section-container">
+    <div class="product-component">
+        <img src="images/products/shop/ametzu.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">ameztu cargo pants</a>
+            <a class="product-component-price">€450</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/izeki.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">izeki articulated cargo pants</a>
+            <a class="product-component-price">€510</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/ameztu-articulated.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">ameztu articulated pants</a>
+            <a class="product-component-price">€450</a>
+        </div>
+    </div>
+    <div class="product-component">
+        <img src="images/products/shop/iritsi.jpg">
+        <div class="product-button-component">
+            <a class="product-button-title">Quick buy</a>
+            <div class="product-button-sizes">
+                <a>XS</a>
+                <div class="vertical-line"></div>
+                <a>S</a>
+                <div class="vertical-line"></div>
+                <a>M</a>
+                <div class="vertical-line"></div>
+                <a>L</a>
+                <div class="vertical-line"></div>
+                <a>XL</a>
+                <div class="vertical-line"></div>
+                <a>XLL</a>
+            </div>
+        </div>
+        <div class="product-component-description">
+            <a class="product-component-name">iritsi cargo pants</a>
+            <a class="product-component-price">€475</a>
+        </div>
+    </div>   
+</div>
+
+<div class="product-section-outro">
+    <div class="product-section-button">
+        <a>Shop all bottoms</a>
+        <div class="underline"></div>
+    </div>
+</div>
+
+<div class="about-container">
+    <img src="images/backgrounds/about.jpg">
+    <div class="about-text-container">
+        <div class="about-title-container">
+            <a>about</a>
+            <h1>evel nifne</h1>
+        </div>
+        <div class="about-text">
+            <a>By partnering with the most advanced manufacturers from Switzerland, USA and Italy we are able to offer products in a wide selection of fabrics. This season brings new solutions as we introduce a range of graphene infused garments. New dye experiments and fabric processing techniques are developed to further research new patterns, shapes and textures for our weatherproof materials.</a>
+            <a>Our products are made to order in EU with uncompromised attention to details. Available in standard sizing with the possibility of custom tailoring to your measurements.</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-item-1">
+            <h1>evel nifne</h1>
+            <a>Experimental made to order garments with technical solutions.</a>
+        </div>
+        <div class="footer-item-2">
+            <div class="footer-button">
+                <a>Search</a>
+                <div class="underline"></div>
+            </div>
+            <div class="footer-button">
+                <a>All Items</a>
+                <div class="underline"></div>
+            </div>
+            <div class="footer-button">
+                <a>Contact Us</a>
+                <div class="underline"></div>
+            </div>
+            <div class="footer-button">
+                <a>Fabrics Guide</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <div class="footer-item-3">
+            <div class="footer-button">
+                <a>Return Policy</a>
+                <div class="underline"></div>
+            </div>
+            <div class="footer-button">
+                <a>Terms & Conditions</a>
+                <div class="underline"></div>
+            </div>
+            <div class="footer-button">
+                <a>Privacy policy</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <div class="footer-item-4">
+            <a class="newsletter-title">Newsletter</a>
+            <a class="newsletter-desc">Sign up to receive updates on our latest relaeases</a>
+            <form>
+                <input type="text" class="newsletter-field" value="Enter your email address" onfocus="this.value=''">
+            </form>
+            <div class="footer-button" onclick="subscribe()">
+                <a>Subscribe</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-outro">
+        <div class="underline"></div>
+        <a>© enfin levé</a>
+    </div>
+</div>
+
+<script>
+
+    document.getElementById('header-video').currentTime = 4;
+
+    changeNavbarToTransparent();
+
+    hideNavbarLogo();
+
+    setTimeout(function()
+    {
+        document.getElementsByClassName('head-logo-text')[0].classList.add('head-logo-after');
+    }, 2000);
+
+    function hideHeadText()
+    {
+        //hide if scroll position > 0
+        document.getElementsByClassName('head-logo-container')[0].style.opacity = "0";
+    };
+
+    function changeNavbarToWhite()
+    {
+        var searchIcon = document.getElementById("search-icon");
+        let navbar = document.querySelector('.navbar-container');
+        let cartCounter = document.querySelector('.cart-counter');
+        searchIcon.src = "icons/search-icon.svg";
+        navbar.classList.remove('navbar-default');
+        cartCounter.classList.remove('cart-counter-default');
+    }
+
+    function changeNavbarToTransparent()
+    {
+        var searchIcon = document.getElementById("search-icon");
+        let navbar = document.querySelector('.navbar-container');
+        let cartCounter = document.querySelector('.cart-counter');
+        searchIcon.src = "icons/search-icon-white.svg";
+        navbar.classList.add('navbar-default');
+        cartCounter.classList.add('cart-counter-default');
+    }
+
+    function hideNavbarLogo()
+    {
+        document.getElementsByClassName('logo-button')[0].style.opacity = "0";
+    }
+
+    function showNavbarLogo()
+    {
+        document.getElementsByClassName('logo-button')[0].style.opacity = "1";
+    }
+
+
+    function shop()
+    {
+        document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
+        document.getElementsByClassName('shop-alingment')[0].style.display = "flex";
+        document.getElementById('buttons-currency').style.display = "none";
+        document.getElementById('buttons-collections').style.display = "none";
+        document.getElementById('navbar-image').src = "images/backgrounds/shop.jpg";
+    }
+
+    function collection()
+    {
+        document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
+        document.getElementsByClassName('shop-alingment')[0].style.display = "none";
+        document.getElementById('buttons-currency').style.display = "none";
+        document.getElementById('buttons-collections').style.display = "flex";
+        document.getElementById('navbar-image').src = "images/backgrounds/collection.jpg";
+    }
+
+    function currency()
+    {
+        document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
+        document.getElementsByClassName('shop-alingment')[0].style.display = "none";
+        document.getElementById('buttons-currency').style.display = "flex";
+        document.getElementById('buttons-collections').style.display = "none";
+        document.getElementById('navbar-image').src = "images/backgrounds/currency.jpg";
+    }
+
+    function hide()
+    {
+        document.getElementsByClassName('navbar-landscape')[0].style.display = "none";
+    }
+
+    function subscribe()
+    {
+        document.getElementsByClassName('newsletter-field')[0].value = '';
+    }
+
+    
+    
+</script>
+</body>
+
+</html>
