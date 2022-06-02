@@ -17,11 +17,11 @@
         <div class="collections-button" onclick="collection()">
             <a>Collections</a>
         </div>
-        <div class="search-button">
+        <div class="search-button" onclick="search()">
             <img id="search-icon"src="icons/search-icon.svg">
 
         </div>
-        <div class="logo-button" onclick="hide()">
+        <div class="logo-button" onclick="home()">
             <a>ével nifne</a>
 
         </div>
@@ -33,10 +33,11 @@
 
         </div>
         <div class="cart-button">
-            <a>Cart</a>
+            <a id="cart">Cart</a>
             <div class="cart-counter">
                 <a>0</a>
             </div>
+            <img id="close" onclick="closeSearch()" src="icons/close.svg" style="display: none;">
         </div>
 
 
@@ -48,35 +49,35 @@
         <div class="buttons-alingment">
             <div class="shop-alingment">
                 <div id="buttons-men" class="buttons-container">
-                        <a>Men</a>
-                        <a>All items</a>
-                        <a>New in</a>
-                        <a>Outerwear</a>
-                        <a>Tops</a>
-                        <a>Sweatshirts</a>
-                        <a>Bottoms</a>
-                        <a>Jewellery</a>
-                        <a>Accesories</a>
+                    <a onclick="openShop()">Men</a>
+                    <a onclick="openShop()">All items</a>
+                    <a onclick="openShop()">New in</a>
+                    <a onclick="openShop()">Outerwear</a>
+                    <a onclick="openShop()">Tops</a>
+                    <a onclick="openShop()">Sweatshirts</a>
+                    <a onclick="openShop()">Bottoms</a>
+                    <a onclick="openShop()">Jewellery</a>
+                    <a onclick="openShop()">Accesories</a>
                 </div>
                 <div id="buttons-women" class="buttons-container">
-                        <a>Women</a>
-                        <a>All items</a>
-                        <a>New in</a>
-                        <a>Outerwear</a>
-                        <a>Tops</a>
-                        <a>Bottoms</a>
-                        <a>Jewellery</a>
-                        <a>Accesories</a>
+                    <a onclick="openShop()">Women</a>
+                    <a onclick="openShop()">All items</a>
+                    <a onclick="openShop()">New in</a>
+                    <a onclick="openShop()">Outerwear</a>
+                    <a onclick="openShop()">Tops</a>
+                    <a onclick="openShop()">Bottoms</a>
+                    <a onclick="openShop()">Jewellery</a>
+                    <a onclick="openShop()">Accesories</a>
                 </div>
             </div>
             <div id="buttons-collections" class="buttons-container">
-                <a>Collection XVI</a>
-                <a>Collection XV</a>
-                <a>Collection XIV</a>
-                <a>Collection XIII</a>
-                <a>Collection XII</a>
-                <a>Collection XI</a>
-                <a>Collection X</a>
+                <a onclick="openCollection()">Collection XVI</a>
+                <a onclick="openCollection()">Collection XV</a>
+                <a onclick="openCollection()">Collection XIV</a>
+                <a onclick="openCollection()">Collection XIII</a>
+                <a onclick="openCollection()">Collection XII</a>
+                <a onclick="openCollection()">Collection XI</a>
+                <a onclick="openCollection()">Collection X</a>
             </div>
             <div id="buttons-currency" class="buttons-container">
                 <a>EUR/EN</a>
@@ -86,16 +87,315 @@
                 <a>SEK/EN</a>
                 <a>NOK/EN</a>
             </div>
+
         </div>
     </div>
-    
 </div>
 
-<div class="head-logo-container">
+<div id="search-field" style="display: none;">
+    <form>
+        <input type="text" class="search-input" value="Type here..." onfocus="this.value=''">
+        <img src="icons/search-icon.svg" onclick="searchPhrase()">
+    </form>
+    <div class="product-section-wrapper" style="margin-top: 196px; display: none;">
+        <div class="product-section-container">
+            <div class="product-component">
+                <img src="images/products/shop/larrea.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">larrea jacket</a>
+                    <a class="product-component-price">€450</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/gehien-white.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">gehein jacket</a>
+                    <a class="product-component-price">€510</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/aise.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">aise jacket</a>
+                    <a class="product-component-price">€495</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/zehar.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">zehar jacket</a>
+                    <a class="product-component-price">€495</a>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="product-section-container">
+            <div class="product-component">
+                <img src="images/products/shop/uhal.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">uhal jacket</a>
+                    <a class="product-component-price">€720</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/ezina.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">ezina jacket</a>
+                    <a class="product-component-price">€720</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/akitz.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">akaitz reversible noragi bomber</a>
+                    <a class="product-component-price">€980</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/gehein.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">gehien jacket</a>
+                    <a class="product-component-price">€790</a>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="product-section-container">
+            <div class="product-component">
+                <img src="images/products/shop/hitzen.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">hitzen jacket stotz</a>
+                    <a class="product-component-price">€890</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/uhal-khaki.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">uhal jacket</a>
+                    <a class="product-component-price">€540</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/hotzik.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">hotzik padded shirt</a>
+                    <a class="product-component-price">€680</a>
+                </div>
+            </div>
+            <div class="product-component">
+                <img src="images/products/shop/arrano.jpg">
+                <div class="product-button-component">
+                    <a class="product-button-title">Quick buy</a>
+                    <div class="product-button-sizes">
+                        <a>XS</a>
+                        <div class="vertical-line"></div>
+                        <a>S</a>
+                        <div class="vertical-line"></div>
+                        <a>M</a>
+                        <div class="vertical-line"></div>
+                        <a>L</a>
+                        <div class="vertical-line"></div>
+                        <a>XL</a>
+                        <div class="vertical-line"></div>
+                        <a>XLL</a>
+                    </div>
+                </div>
+                <div class="product-component-description">
+                    <a class="product-component-name">arrano puffer jacket</a>
+                    <a class="product-component-price">€1250</a>
+                </div>
+            </div>   
+        </div>
+        </div>
+        <div class="product-section-outro collection-site-button" style="display: none;">
+            <div class="product-section-button">
+                <a>Load more</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+</div>
+
+<div class="head-logo-container main">
     <a class="head-logo-text">evel nifne</a>
 </div>
 
-<div class="video-container">
+<div class="video-container main">
     <video id="header-video" autoplay muted loop>
         <source src="videos/header-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -120,11 +420,11 @@
 
 </div>
 
-<div class="product-section-title">
+<div class="product-section-title main">
     <a>Outerwear</a>
 </div>
 
-<div class="product-section-container">
+<div class="product-section-container main">
     <div class="product-component">
         <img src="images/products/shop/larrea.jpg">
         <div class="product-button-component">
@@ -219,7 +519,7 @@
     </div>   
 </div>
 
-<div class="product-section-outro">
+<div class="product-section-outro main">
     <div class="product-section-button">
         <a>Shop all outerwear</a>
         <div class="underline"></div>
@@ -244,11 +544,11 @@
     </div>
 </div>
 
-<div class="product-section-title">
+<div class="product-section-title main">
     <a>Bottoms</a>
 </div>
 
-<div class="product-section-container">
+<div class="product-section-container main">
     <div class="product-component">
         <img src="images/products/shop/ametzu.jpg">
         <div class="product-button-component">
@@ -343,14 +643,14 @@
     </div>   
 </div>
 
-<div class="product-section-outro">
+<div class="product-section-outro main">
     <div class="product-section-button">
         <a>Shop all bottoms</a>
         <div class="underline"></div>
     </div>
 </div>
 
-<div class="about-container">
+<div class="about-container main">
     <img src="images/backgrounds/about.jpg">
     <div class="about-text-container">
         <div class="about-title-container">
@@ -365,7 +665,7 @@
 
 </div>
 
-<div class="footer">
+<div class="footer main">
     <div class="footer-container">
         <div class="footer-item-1">
             <h1>evel nifne</h1>
@@ -474,6 +774,8 @@
 
     function shop()
     {
+        showNavbarLogo();
+        changeNavbarToTransparent();
         document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
         document.getElementsByClassName('shop-alingment')[0].style.display = "flex";
         document.getElementById('buttons-currency').style.display = "none";
@@ -483,6 +785,8 @@
 
     function collection()
     {
+        showNavbarLogo();
+        changeNavbarToTransparent();
         document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
         document.getElementsByClassName('shop-alingment')[0].style.display = "none";
         document.getElementById('buttons-currency').style.display = "none";
@@ -492,21 +796,115 @@
 
     function currency()
     {
+        showNavbarLogo();
+        changeNavbarToTransparent();
         document.getElementsByClassName('navbar-landscape')[0].style.display = "flex";
         document.getElementsByClassName('shop-alingment')[0].style.display = "none";
         document.getElementById('buttons-currency').style.display = "flex";
         document.getElementById('buttons-collections').style.display = "none";
         document.getElementById('navbar-image').src = "images/backgrounds/currency.jpg";
+        document.getElementById('navbar-image').style.backgroundColor = "transparent";
     }
 
-    function hide()
+    function search()
     {
-        document.getElementsByClassName('navbar-landscape')[0].style.display = "none";
+        
+        changeNavbarToSearch();
+        showNavbarLogo();
+    }
+
+    function closeSearch()
+    {
+        var searchIcon = document.getElementById("search-icon");
+        searchIcon.src = "icons/search-icon.svg";
+        document.getElementsByClassName('currency-button')[0].style.visibility = "visible";
+        document.getElementsByClassName('shop-button')[0].style.visibility = "visible";
+        document.getElementsByClassName('collections-button')[0].style.visibility = "visible";
+        document.getElementsByClassName('contact-button')[0].style.visibility = "visible";
+        document.getElementsByClassName('search-button')[0].style.visibility = "visible";
+        document.getElementById('close').style.display = "none";
+        document.getElementById('cart').style.display = "flex";
+        document.getElementsByClassName('cart-counter')[0].style.display = "flex";
+        document.getElementById('navbar-image').style.backgroundColor = "transparent";
+        document.getElementById('navbar-image').style.display = "flex";
+        document.getElementById('search-field').style.display = "none";
+        
+        var mainComponents = document.getElementsByClassName('main');
+        for (let i = 0; i < mainComponents.length; i++){
+            mainComponents[i].style.display = "flex";
+        }
+        document.getElementsByClassName('collection-section-container')[0].style.display = "grid";
+        document.getElementsByClassName('collection-section-container')[1].style.display = "grid";
+    }
+
+    function changeNavbarToSearch()
+    {
+        document.getElementsByClassName('currency-button')[0].style.visibility = "hidden";
+        document.getElementsByClassName('shop-button')[0].style.visibility = "hidden";
+        document.getElementsByClassName('collections-button')[0].style.visibility = "hidden";
+        document.getElementsByClassName('contact-button')[0].style.visibility = "hidden";
+        document.getElementsByClassName('search-button')[0].style.visibility = "hidden";
+        document.getElementById('close').style.display = "flex";
+        document.getElementById('cart').style.display = "none";
+        document.getElementsByClassName('cart-counter')[0].style.display = "none";
+
+        var searchIcon = document.getElementById("search-icon");
+        let navbar = document.querySelector('.navbar-container');
+        let cartCounter = document.querySelector('.cart-counter');
+        navbar.classList.remove('navbar-default');
+        cartCounter.classList.remove('cart-counter-default');
+        document.getElementById('search-field').style.display = "flex";
+
+        //hide  everything
+        var mainComponents = document.getElementsByClassName('main');
+        for (let i = 0; i < mainComponents.length; i++){
+            mainComponents[i].style.display = "none";
+        }
+        document.getElementsByClassName('collection-section-container')[0].style.display = "none";
+        document.getElementsByClassName('collection-section-container')[1].style.display = "none";
+        
+    }
+
+    function searchPhrase()
+    {
+        document.getElementsByClassName('product-section-wrapper')[0].style.display = "flex";
+        document.getElementsByClassName('product-section-outro')[0].style.display = "flex";  
+    }
+
+
+
+    function home()
+    {
+        const btn = document.getElementsByClassName('navbar-landscape')[0];
+
+        if(btn.style.display === 'none')
+        {
+            openHome();
+        }
+        else
+        {
+           btn.style.display = "none";
+        }
     }
 
     function subscribe()
     {
         document.getElementsByClassName('newsletter-field')[0].value = '';
+    }
+
+    function openCollection()
+    {
+        window.location.replace("collection.html");
+    }
+
+    function openHome()
+    {
+        window.location.replace("index.html");
+    }
+
+    function openShop()
+    {
+        window.location.replace("shop.html");
     }
 
     

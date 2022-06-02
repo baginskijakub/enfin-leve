@@ -17,6 +17,10 @@ body{
     background-color: var(--grey-100);
 }
 
+p{
+    margin: 0;
+}
+
 @font-face {
     font-family: "Futura-Book";
     src: url("fonts/futura-book-font.ttf") format('truetype');
@@ -36,6 +40,8 @@ body{
     z-index: 11;
     padding: 16px 20px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: calc(100% - 40px);
     background-color: var(--grey-100);
     transition: top 150ms;
@@ -50,6 +56,8 @@ body{
 
 .navbar a{
     transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: visibility 0ms;
+    transition: letter-spacing 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: var(--black-900);
 }
 
@@ -162,6 +170,8 @@ body{
 
 .navbar-landscape{
     position: fixed;
+    top: 0;
+    left: 0;
     display: none;
     width: 100vw;
     height: 100vh;
@@ -672,3 +682,137 @@ input:focus {
 .head-logo-none{
     opacity: 0;
 }
+
+.collection-head-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 196px;
+    margin-bottom: 96px;
+}
+
+.collection-head-container a{
+    font-size: 45px;
+    line-height: 105%;
+    letter-spacing: -0.02em;
+}
+
+.collection-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 20px;
+    width: calc(100% - 40px);
+}
+
+.collection-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+#collection-image-height{
+    width: calc(66% - 13px);
+}
+
+.collection-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    width: calc(33% - 7px);
+}
+
+.collection-text-half{
+    height: 50%;
+    width: 100%;
+}
+
+/* .collection-2nd{
+    width: 100vw;
+} */
+
+.collection-2nd img:nth-child(1){
+    width: calc(33% - 7px);
+}
+
+.collection-2nd img:nth-child(2){
+    width: calc(66% - 13px);
+}
+
+.collection-4th{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.collection-4th img{
+    width: calc(33% - 7px);
+}
+
+.collection-5th img:nth-child(1){
+    width: calc(66% - 13px);
+}
+
+.collection-5th img:nth-child(2){
+    width: calc(33% - 7px);
+}
+
+.collection-site-button{
+    padding-top: 96px;
+    padding-bottom: 60px;
+}
+
+.product-section-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#close:hover{
+    opacity: 0.7;
+}
+
+#search-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--grey-100);
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#search-field form{
+    margin-top: 259px;
+    width: calc(33% - 7px);
+    position: relative;
+    background-color: transparent;
+}
+
+#search-field form img{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+#search-field form img:hover{
+    opacity: 0.7;
+}
+
+
+.search-input{
+    padding: 10px;
+    font-size: 19px;
+    line-height: 120%;
+    border: none;
+    border-bottom: var(--black-900) solid 1px;
+    background-color: transparent;
+    width: 100%;
+    font-family: Futura-Book;
+}
+
